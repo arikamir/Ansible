@@ -1,0 +1,10 @@
+---
+
+- name: "Setup ubuntu nodes"
+  hosts: ubuntu
+  gather_facts: false
+
+  tasks:
+
+    - name: Ping
+      ansible.builtin.ping:
