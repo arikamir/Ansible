@@ -27,10 +27,6 @@ jobs:
         uses: ansible/ansible-lint@v24.10.0
         with:
           setup_python: "false"
-  staging:
-    runs-on: ubuntu-latest
-    needs: ansible-lint
-    steps:
       - name: "Execute playbook on staging"
         uses: dawidd6/action-ansible-playbook@v2
         with:
